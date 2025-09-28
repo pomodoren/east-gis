@@ -1,0 +1,42 @@
+site_name: East GIS
+site_url: https://librelabs.cc/
+
+nav:
+  - Të dhëna & mjete:
+    - Status: data/index.md
+    - OpenStreetMap: data/osm.md
+    - Census: data/census.md
+    - Databaza: data/db.md
+    - QGIS: data/qgis.md
+  - Hartëzim:
+    - Status: mapping/index.md
+    - Ndërtesa: mapping/buildings.md
+    - Infrastrukturë: mapping/infra.md
+    - Problematika: mapping/problems.md
+  - Urbanizimi:
+    - Urbanizimi: mapping/index.md 
+  - Transporti:
+    - Transporti: transport/index.md 
+  - Menaxhim i rreziqeve:
+    - Hyrje:  risk/index.md 
+  
+plugins:
+    - mkdocs-jupyter:
+    # show_input: False
+
+theme:
+  name: material
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.prune 
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format

@@ -1,0 +1,17 @@
+# main
+mkdocs
+mkdocs-material
+mkdocs-jupyter
+jupyterlab
+
+# processing
+pandas
+geopandas
+
+# advanced
+scikit-learn
+
+# plotting
+matplotlib
+seaborn
+
